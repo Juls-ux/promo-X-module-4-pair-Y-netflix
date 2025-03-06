@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const port = 3000;
+const port = 3001;
 app.listen(port, () => {
   console.log(`Server ready at: <http://localhost:${port}>`);
 });
@@ -35,4 +35,3 @@ app.get("/api/actors", async (req, res) => {
   res.json(result);
 });
 
-const mysql = require("mysql2/promise");
